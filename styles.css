@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Evita el desbordamiento del botón fuera de la ventana */
+  }
+  
+  .container {
+    text-align: center;
+  }
+
+.title {
+  font-size: 36px; /* Tamaño de la letra */
+  text-align: center; /* Centrar el texto */
+  margin-top: 1%; /* Espacio superior */
+}
+
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  #noButton {
+    /* Mantén el botón "No" visible mientras se mueve */
+    background-color: #ff7675;
+    color: white;
+    position: absolute;
+    animation: moveButton 3s infinite;
+  }
+  
+  @keyframes moveButton {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(50px, -50px);
+    }
+    50% {
+      transform: translate(100px, 50px);
+    }
+    75% {
+      transform: translate(-50px, 100px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
